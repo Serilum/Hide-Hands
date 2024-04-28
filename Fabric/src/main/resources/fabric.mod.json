@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "id": "hidehands",
+  "version": "4.2",
+
+  "name": "Hide Hands",
+  "description": "Hide your offhand and/or mainhand, always or while holding specific items.",
+  "authors": [ "Rick South" ],
+  "contact": {
+    "homepage": "https://serilum.com/mod/hide-hands",
+    "sources": "https://github.com/Serilum/Hide-Hands",
+    "issues": "https://github.com/Serilum/.issue-tracker/labels/Mod:%20Hide%20Hands"
+  },
+
+  "license": "All Right Reserved",
+  "icon": "icon.png",
+
+  "environment": "*",
+  "entrypoints": { "main": [ "com.natamus.hidehands.ModFabric" ], "client": [ "com.natamus.hidehands.ModFabricClient" ], "modmenu": [ "com.natamus.hidehands.fabric.config.IntegrateModMenu" ] },
+
+  "depends": {
+    "fabricloader": ">=0.12.5",
+    "fabric": "*",
+    "minecraft": ">=1.20",
+    "java": ">=17",
+    "collective": ">=7.53"
+  },
+
+  "custom": {
+    "modmenu": {
+      "links": {
+        "Donate <3" : "https://ricksouth.com/donate"
+      }
+    }
+  },
+
+  "contributors": [
+	  " ",
+	  "Thank you very much to my Membership sponsors for supporting the development of this mod!",
+	  " ",
+	  "If you would like to contribute too, check out https://serilum.com/donate.",
+	  " ",
+	  "Membership sponsors:",
+	  " Alister",
+	  " Andrean Olgo",
+	  " aternosorg",
+	  " BirdieMiner",
+	  " Cherriesaurus",
+	  " Jack",
+	  " Jeremy Langford",
+	  " Michael W. S.",
+	  " pepe1191",
+	  " Shana Gitnick",
+	  " Tyler Behl"
+  ]
+}
