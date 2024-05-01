@@ -1,0 +1,34 @@
+modLoader="javafml"
+loaderVersion="*"
+license="All rights reserved"
+issueTrackerURL="https://github.com/Serilum/.issue-tracker/labels/Mod:%20Hide%20Hands"
+logoFile="icon.png"
+
+[[mods]]
+modId="hidehands"
+version="4.2"
+displayName="Hide Hands"
+displayURL="https://serilum.com/mod/hide-hands"
+authors="Rick South"
+description='''Hide your offhand and/or mainhand, always or while holding specific items.
+'''
+credits='''Thank you very much to my Membership sponsors for supporting the development of this mod:  
+
+Alister, Andrean Olgo, aternosorg, BirdieMiner, Cherriesaurus, Jack, Jeremy Langford, Michael W. S., pepe1191, Shana Gitnick, Tyler Behl   
+
+If you would like to contribute too, check out https://serilum.com/donate. Appreciate it! <3   
+'''
+
+[[dependencies.hidehands]]
+    modId="collective"
+    mandatory=true
+    versionRange="[7.54,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.hidehands]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.6]"
+    ordering="NONE"
+    side="BOTH"
