@@ -11,7 +11,7 @@ public class ConfigHandler extends DuskConfig {
 	public static HashMap<String, List<String>> configMetaData = new HashMap<String, List<String>>();
 
 	@Entry public static boolean alwaysHideMainHand = false;
-	@Entry public static boolean alwaysHideEmptyMainHand = true;
+	@Entry public static boolean alwaysHideEmptyMainHand = false;
 	@Entry public static String hideMainHandWithItems = "";
 	@Entry public static boolean alwaysHideOffhand = false;
 	@Entry public static String hideOffhandWithItems = "minecraft:totem_of_undying,minecraft:torch";
