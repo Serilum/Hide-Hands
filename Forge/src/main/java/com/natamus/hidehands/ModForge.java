@@ -1,6 +1,7 @@
 package com.natamus.hidehands;
 
 import com.natamus.collective.check.RegisterMod;
+import com.natamus.collective.check.ShouldLoadCheck;
 import com.natamus.hidehands.forge.config.IntegrateForgeConfig;
 import com.natamus.hidehands.forge.events.ForgeHandEvent;
 import com.natamus.hidehands.util.Reference;
@@ -17,6 +18,10 @@ import net.minecraftforge.fml.loading.FMLEnvironment;
 public class ModForge {
 	
 	public ModForge() {
+		if (!ShouldLoadCheck.shouldLoad(Reference.MOD_ID)) {
+			return;
+		}
+
 		IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 		modEventBus.addListener(this::loadComplete);
 
