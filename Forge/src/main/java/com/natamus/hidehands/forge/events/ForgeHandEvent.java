@@ -1,7 +1,6 @@
 package com.natamus.hidehands.forge.events;
 
 import com.natamus.hidehands.events.HandEvent;
-import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.RenderHandEvent;
 import net.minecraftforge.eventbus.api.listener.Priority;
 import net.minecraftforge.eventbus.api.bus.BusGroup;

@@ -1,7 +1,6 @@
 package com.natamus.hidehands.neoforge.events;
 
 import com.natamus.hidehands.events.HandEvent;
-import net.neoforged.api.distmarker.Dist;
 import net.neoforged.neoforge.client.event.RenderHandEvent;
 import net.neoforged.bus.api.EventPriority;
 import net.neoforged.bus.api.SubscribeEvent;
