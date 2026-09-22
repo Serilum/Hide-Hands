@@ -27,7 +27,7 @@ public class HandEvent {
 				}
 				return true;
 			}
-			else if (mc.player.swinging) {
+			else if (mc.player.isSwinging()) {
 				hideDelay = 30;
 			}
 
