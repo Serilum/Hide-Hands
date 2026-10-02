@@ -1,7 +1,7 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "com.natamus.hidehands.mixin",
+  "package": "com.serilum.hidehands.mixin",
   "compatibilityLevel": "JAVA_25",
   "mixins": [
 
