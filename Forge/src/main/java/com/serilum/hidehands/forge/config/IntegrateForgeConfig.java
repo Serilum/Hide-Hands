@@ -1,7 +1,7 @@
-package com.natamus.hidehands.forge.config;
+package com.serilum.hidehands.forge.config;
 
 import com.natamus.collective.config.DuskConfig;
-import com.natamus.hidehands.util.Reference;
+import com.serilum.hidehands.util.Reference;
 import net.minecraftforge.client.ConfigScreenHandler;
 import net.minecraftforge.fml.ModLoadingContext;
 

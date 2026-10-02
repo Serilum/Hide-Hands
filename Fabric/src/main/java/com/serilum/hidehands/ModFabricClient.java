@@ -1,11 +1,11 @@
-package com.natamus.hidehands;
+package com.serilum.hidehands;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.natamus.collective.fabric.callbacks.CollectiveRenderEvents;
-import com.natamus.hidehands.events.HandEvent;
+import com.serilum.hidehands.events.HandEvent;
 
 import net.fabricmc.api.ClientModInitializer;
-import com.natamus.hidehands.util.Reference;
+import com.serilum.hidehands.util.Reference;
 import com.natamus.collective.check.ShouldLoadCheck;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.item.ItemStack;

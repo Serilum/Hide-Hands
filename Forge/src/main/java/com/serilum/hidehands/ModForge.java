@@ -1,10 +1,10 @@
-package com.natamus.hidehands;
+package com.serilum.hidehands;
 
 import com.natamus.collective.check.RegisterMod;
 import com.natamus.collective.check.ShouldLoadCheck;
-import com.natamus.hidehands.forge.config.IntegrateForgeConfig;
-import com.natamus.hidehands.forge.events.ForgeHandEvent;
-import com.natamus.hidehands.util.Reference;
+import com.serilum.hidehands.forge.config.IntegrateForgeConfig;
+import com.serilum.hidehands.forge.events.ForgeHandEvent;
+import com.serilum.hidehands.util.Reference;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -38,7 +38,7 @@ public class ModForge {
 			return;
 		}
 
-    	MinecraftForge.EVENT_BUS.register(ForgeHandEvent.class);
+		MinecraftForge.EVENT_BUS.register(ForgeHandEvent.class);
 	}
 
 	private static void setGlobalConstants() {

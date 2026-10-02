@@ -1,6 +1,6 @@
-package com.natamus.hidehands;
+package com.serilum.hidehands;
 
-import com.natamus.hidehands.config.ConfigHandler;
+import com.serilum.hidehands.config.ConfigHandler;
 
 public class ModCommon {
 

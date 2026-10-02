@@ -1,7 +1,7 @@
-package com.natamus.hidehands.fabric.config;
+package com.serilum.hidehands.fabric.config;
 
 import com.natamus.collective.config.DuskConfig;
-import com.natamus.hidehands.util.Reference;
+import com.serilum.hidehands.util.Reference;
 import com.terraformersmc.modmenu.api.ConfigScreenFactory;
 import com.terraformersmc.modmenu.api.ModMenuApi;
 

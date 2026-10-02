@@ -1,8 +1,8 @@
-package com.natamus.hidehands;
+package com.serilum.hidehands;
 
 import com.natamus.collective.check.RegisterMod;
 import com.natamus.collective.check.ShouldLoadCheck;
-import com.natamus.hidehands.util.Reference;
+import com.serilum.hidehands.util.Reference;
 import net.fabricmc.api.ModInitializer;
 
 public class ModFabric implements ModInitializer {

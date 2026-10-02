@@ -1,7 +1,7 @@
-package com.natamus.hidehands.events;
+package com.serilum.hidehands.events;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import com.natamus.hidehands.config.ConfigHandler;
+import com.serilum.hidehands.config.ConfigHandler;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.InteractionHand;
