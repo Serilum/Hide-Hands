@@ -1,5 +1,6 @@
 package com.serilum.hidehands.events;
 
+import com.natamus.collective.functions.ConfigFunctions;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.serilum.hidehands.config.ConfigHandler;
 import net.minecraft.client.Minecraft;
@@ -15,7 +16,7 @@ public class HandEvent {
 		if (hand.equals(InteractionHand.MAIN_HAND)) {
 			if (!itemstack.isEmpty()) {
 				if (!ConfigHandler.alwaysHideMainHand) {
-					if (!isHoldingItem(ConfigHandler.hideMainHandWithItems, itemstack)) {
+					if (!ConfigFunctions.isInIdList(ConfigHandler.hideMainHandWithItems, BuiltInRegistries.ITEM.getKey(itemstack.getItem()).toString())) {
 						hideDelay = 10;
 						return true;
 					}
@@ -38,18 +39,10 @@ public class HandEvent {
 		}
 		else if (hand.equals(InteractionHand.OFF_HAND)) {
 			if (!ConfigHandler.alwaysHideOffhand) {
-				return !isHoldingItem(ConfigHandler.hideOffhandWithItems, itemstack);
+				return !ConfigFunctions.isInIdList(ConfigHandler.hideOffhandWithItems, BuiltInRegistries.ITEM.getKey(itemstack.getItem()).toString());
 			}
 		}
 
-		return false;
-	}
-	
-	private static boolean isHoldingItem(String hideitems, ItemStack item) {
-		if (hideitems.length() > 1) {
-			String itemstackid = BuiltInRegistries.ITEM.getKey(item.getItem()).toString().toLowerCase();
-			return hideitems.toLowerCase().contains(itemstackid);
-		}
 		return false;
 	}
 }

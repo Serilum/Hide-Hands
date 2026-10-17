@@ -12,9 +12,9 @@ public class ConfigHandler extends DuskConfig {
 
 	@Entry public static boolean alwaysHideMainHand = false;
 	@Entry public static boolean alwaysHideEmptyMainHand = false;
-	@Entry public static String hideMainHandWithItems = "";
+	@Entry(registry = "item") public static String hideMainHandWithItems = "";
 	@Entry public static boolean alwaysHideOffhand = false;
-	@Entry public static String hideOffhandWithItems = "minecraft:totem_of_undying,minecraft:torch";
+	@Entry(registry = "item") public static String hideOffhandWithItems = "minecraft:totem_of_undying,minecraft:torch";
 
 	public static void initConfig() {
 		configMetaData.put("alwaysHideMainHand", Arrays.asList(
